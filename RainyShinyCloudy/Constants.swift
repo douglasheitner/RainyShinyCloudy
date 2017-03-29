@@ -11,13 +11,14 @@ import Foundation
 typealias DownloadComplete = () -> ()
 
 let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-let LATITUDE = "lat="
-let LONGITUDE = "&lon="
+let BASE_FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?"
+let FORECAST_RESULTS = "&cnt=10"
+let LATITUDE = "lat=\(Location.sharedInstance.latitude!)"
+let LONGITUDE = "&lon=\(Location.sharedInstance.longitude!)"
 let UNITS = "&units=metric"
 let API_KEY = "&appid=a0aeb65a25ba902739464ede0fe3fe02"
-let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=-29.98&lon=-50.13&cnt=10&units=metric&appid=a0aeb65a25ba902739464ede0fe3fe02"
 
-
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)-29.98\(LONGITUDE)-50.13\(UNITS)\(API_KEY)"
+let FORECAST_URL = "\(BASE_FORECAST_URL)\(LATITUDE)\(LONGITUDE)\(FORECAST_RESULTS)\(UNITS)\(API_KEY)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)\(LONGITUDE)\(UNITS)\(API_KEY)"
 
 

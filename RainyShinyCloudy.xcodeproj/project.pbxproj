@@ -17,6 +17,7 @@
 		A56A6BA51E8328B500761C78 /* RainyShinyCloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56A6BA31E8328B500761C78 /* RainyShinyCloudy.xcdatamodeld */; };
 		A56A6BA71E8328B500761C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56A6BA61E8328B500761C78 /* Assets.xcassets */; };
 		A56A6BAA1E8328B500761C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56A6BA81E8328B500761C78 /* LaunchScreen.storyboard */; };
+		A5A3550D1E8C2549009B9CCB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3550C1E8C2549009B9CCB /* Location.swift */; };
 		A5CB92641E85BA0400D28C1E /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB92631E85BA0400D28C1E /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		A56A6BA61E8328B500761C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56A6BA91E8328B500761C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56A6BAB1E8328B500761C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A3550C1E8C2549009B9CCB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A5CB92631E85BA0400D28C1E /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		A7604077087EB087B4C84292 /* Pods-RainyShinyCloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				A52C092F1E844A170024FD2D /* Constants.swift */,
 				A52C09311E844D980024FD2D /* CurrentWeather.swift */,
 				A51E59701E8598D8008956BD /* Forecast.swift */,
+				A5A3550C1E8C2549009B9CCB /* Location.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				A56A6BA51E8328B500761C78 /* RainyShinyCloudy.xcdatamodeld in Sources */,
 				A52C09321E844D980024FD2D /* CurrentWeather.swift in Sources */,
+				A5A3550D1E8C2549009B9CCB /* Location.swift in Sources */,
 				A56A6B9F1E8328B500761C78 /* WeatherVC.swift in Sources */,
 				A56A6B9D1E8328B500761C78 /* AppDelegate.swift in Sources */,
 				A51E59711E8598D8008956BD /* Forecast.swift in Sources */,
@@ -387,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasheitner.RainyShinyCloudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RainyShinyCloudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglasheitner.RainyShinyCloudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

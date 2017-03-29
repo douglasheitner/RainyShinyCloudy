@@ -20,11 +20,11 @@ class Forecast {
         
         if let temp = weatherDict["temp"] as? [String:AnyObject] {
             if let min = temp["min"] as? Double {
-                self._lowTemp = "\(min)"
+                self._lowTemp = "\(String(format: "%.1f", min))℃"
             }
             
             if let max = temp["max"] as? Double {
-                self._highTemp = "\(max)"
+                self._highTemp = "\(String(format: "%.1f", max))℃"
             }
         }
         
